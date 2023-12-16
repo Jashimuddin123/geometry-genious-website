@@ -8,11 +8,28 @@ function calculateTriangleValueById(){
     // set eleement result in area show 
      const setElementValue = setElement('show-area', result);
 }
+// Recteangle onclick calculation
+function calculateRecteangleValueById(){
+const widthInputValue = getElementValue('rectangle-width-input');
+const lengthInputValue = getElementValue('rectangle-length-input');
+// calculation width and length
+
+const recteangleResult = widthInputValue * lengthInputValue ;
+// set elemeent result in show area
+const setElementValue =  setElement('recteangle-show-area', recteangleResult);
+
+}
+// paralallogram onclick function
+function calculateParallelogramValueById(){
+    const baseInputValue =  getElementValue('parallelogram-base-input');
+    const heightInputValue = getElementValue('parallelogram-height-input')
+
+    
+}
 
 
 
-
-
+// reuseable function
 function getElementValue(inputFieldId){
   const inputFIeld = document.getElementById(inputFieldId);
   const inputValueString = inputFIeld.value;
