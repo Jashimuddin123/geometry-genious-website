@@ -120,14 +120,14 @@
               <h2 class="card-title text-center  mx-auto">Ellipse</h2>
               <p class="text-center text-xl">Area (A) = ℼab</p>
               <p class="text-center">
-                <input class="w-16 border  border-blue-800 bg-slate-200" type="text">
+                <input id="ellips-major-input" class="w-16 border  border-blue-800 bg-slate-200" type="text">
                 <span>cm</span>
-                <input class="w-16  ml-4 border border-blue-800 bg-slate-200" type="text">
+                <input id="ellips-minor-input" class="w-16  ml-4 border border-blue-800 bg-slate-200" type="text">
                 <span>cm</span>
               </p>
-              <p class="text-center text-xl font-semibold">Ellipse Area:<span>0</span>cm<sup>2</sup></p>
+              <p class="text-center text-xl font-semibold">Ellipse Area:<span id="ellips-show-area">0</span>cm<sup>2</sup></p>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full text-lg  hover:bg-indigo-900">Calculate</button>
+                <button onclick="calculateEllipseValueById()" class="btn btn-primary w-full text-lg  hover:bg-indigo-900">Calculate</button>
               </div>
             </div>
           </div>

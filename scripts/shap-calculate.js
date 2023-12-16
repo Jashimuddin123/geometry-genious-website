@@ -51,6 +51,16 @@ function calculatePentagoanValueById(){
     // set elemenet 
     const setElementValue = setElement('Pentagoan-show-Area', pentagoanResult)
 }
+// 6: ellips onclick function
+function calculateEllipseValueById(){
+const majorInputValue = getElementValue('ellips-major-input');
+const minorInputValue = getElementValue('ellips-minor-input');
+// calculation ellips
+const ellipsResult = 3.14 * majorInputValue * minorInputValue;
+const twoFixed= ellipsResult.toFixed(2);
+// set elemeent result in show area
+const setElementValue = setElement('ellips-show-area', twoFixed)
+}
 
 
 
