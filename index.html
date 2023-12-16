@@ -9,7 +9,7 @@
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="container mx-auto">
-    <header class="flex justify-between w-full bg-sky-200 py-8 px-4 mt-6 rounded mb-10">
+    <header class="flex flex-col  md:flex-row justify-between w-full bg-sky-200 py-8 px-4 mt-6 rounded mb-10">
 
             <h1 class="text-3xl font-semibold ">Interactive <span class="text-red-600 text-xl">Geometry</span></h1>
         <button class="bg-blue-500 text-xl  py-1 px-5 text-white  rounded">Blog</button>
@@ -120,9 +120,9 @@
               <h2 class="card-title text-center  mx-auto">Ellipse</h2>
               <p class="text-center text-xl">Area (A) = ℼab</p>
               <p class="text-center">
-                <input id="ellips-major-input" class="w-16 border  border-blue-800 bg-slate-200" type="text">
+                <input id="ellips-major-input" class="w-16 border px-2  border-blue-800 bg-slate-200" type="text" placeholder="major">
                 <span>cm</span>
-                <input id="ellips-minor-input" class="w-16  ml-4 border border-blue-800 bg-slate-200" type="text">
+                <input id="ellips-minor-input" class="w-16  px-2 ml-4 border border-blue-800 bg-slate-200" type="text" placeholder="minor">
                 <span>cm</span>
               </p>
               <p class="text-center text-xl font-semibold">Ellipse Area:<span id="ellips-show-area">0</span>cm<sup>2</sup></p>
