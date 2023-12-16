@@ -7,6 +7,16 @@ function calculateTriangleValueById(){
     const result =  0.5 * baseInputValue * heightInputValue;
     // set eleement result in area show 
      const setElementValue = setElement('show-area', result);
+
+    //  validation'
+    if(isNaN(baseInputValue)|| (heightInputValue)){
+        // alert('Congratulation ,,You press the right number');
+       return
+      
+    }
+    else{
+        alert('please press the right number');
+    }
 }
 // 2: Recteangle onclick calculation
 function calculateRecteangleValueById(){
@@ -18,6 +28,16 @@ const recteangleResult = widthInputValue * lengthInputValue ;
 // set elemeent result in show area
 const setElementValue =  setElement('recteangle-show-area', recteangleResult);
 
+// validation
+
+if(isNaN(lengthInputValue)|| (widthInputValue)){
+    // alert('Congratulation ,,You press the right number');
+   return
+  
+}
+else{
+    alert('please press the right number');
+}
 }
 //  3 : paralallogram onclick function
 function calculateParallelogramValueById(){
@@ -28,6 +48,17 @@ function calculateParallelogramValueById(){
 const parallelogramResult = baseInputValue * heightInputValue;
 // set elemenet result inshow area
 const setElementValue =  setElement('parallelogram-show-area', parallelogramResult);
+
+// validation
+
+if(isNaN( heightInputValue)|| (baseInputValue)){
+    // alert('Congratulation ,,You press the right number');
+   return
+  
+}
+else{
+    alert('please press the right number');
+}
 }
 
 // 4: Rhombus onclick function
@@ -39,6 +70,16 @@ function calculateRhombusValueById(){
 
     // set elemenet result in show area
     const setElementValue = setElement('Rhombus-show-Area', rombushResult)
+    // validation
+
+if(isNaN( digonalTwoField)|| (digonalOneField)){
+    // alert('Congratulation ,,You press the right number');
+   return
+  
+}
+else{
+    alert('please press the right number');
+}
 }
 // 5 pentagoan onclick function 
 function calculatePentagoanValueById(){
@@ -50,6 +91,15 @@ function calculatePentagoanValueById(){
 
     // set elemenet 
     const setElementValue = setElement('Pentagoan-show-Area', pentagoanResult)
+    // validation
+    if(isNaN( baseInputValue)|| (peramitterInputValue)){
+        // alert('Congratulation ,,You press the right number');
+       return
+      
+    }
+    else{
+        alert('please press the right number');
+    }
 }
 // 6: ellips onclick function
 function calculateEllipseValueById(){
@@ -60,6 +110,16 @@ const ellipsResult = 3.14 * majorInputValue * minorInputValue;
 const twoFixed= ellipsResult.toFixed(2);
 // set elemeent result in show area
 const setElementValue = setElement('ellips-show-area', twoFixed)
+
+ // validation
+ if(isNaN(  minorInputValue)|| ( majorInputValue)){
+    // alert('Congratulation ,,You press the right number');
+   return
+  
+}
+else{
+    alert('please press the right number');
+}
 }
 
 
