@@ -1,4 +1,4 @@
-// triangle onclick function
+// 1: triangle onclick function
 function calculateTriangleValueById(){
     const baseInputValue = getElementValue('triangle-base-input');
     const heightInputValue = getElementValue('triangle-height-input');
@@ -8,7 +8,7 @@ function calculateTriangleValueById(){
     // set eleement result in area show 
      const setElementValue = setElement('show-area', result);
 }
-// Recteangle onclick calculation
+// 2: Recteangle onclick calculation
 function calculateRecteangleValueById(){
 const widthInputValue = getElementValue('rectangle-width-input');
 const lengthInputValue = getElementValue('rectangle-length-input');
@@ -19,7 +19,7 @@ const recteangleResult = widthInputValue * lengthInputValue ;
 const setElementValue =  setElement('recteangle-show-area', recteangleResult);
 
 }
-// paralallogram onclick function
+//  3 : paralallogram onclick function
 function calculateParallelogramValueById(){
     // get eleemnt by id
     const baseInputValue =  getElementValue('parallelogram-base-input');
@@ -28,8 +28,19 @@ function calculateParallelogramValueById(){
 const parallelogramResult = baseInputValue * heightInputValue;
 // set elemenet result inshow area
 const setElementValue =  setElement('parallelogram-show-area', parallelogramResult);
-
 }
+
+// 4: Rhombus onclick function
+function calculateRhombusValueById(){
+    const digonalOneField = getElementValue('diogonal-one-input');
+    const digonalTwoField = getElementValue('diogonal-two-input');
+    // calculate digonal in rombush
+    const rombushResult = 0.5 * digonalOneField * digonalTwoField;
+
+    // set elemenet result in show area
+    const setElementValue = setElement('Rhombus-show-Area', rombushResult)
+}
+// 5 
 
 
 

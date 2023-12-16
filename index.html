@@ -82,14 +82,14 @@
               <h2 class="card-title text-center  mx-auto">Rhombus</h2>
               <p class="text-center text-lg">Area (A) = 0.5 X d1 X d2</p>
               <p class="text-center">
-                <input class="w-16 border  border-blue-800 bg-slate-200" type="text">
+                <input id="diogonal-one-input" class="w-16 border px-4  border-blue-800 bg-slate-200" type="text" placeholder="di-1">
                 <span>cm</span>
-                <input class="w-16  ml-4 border border-blue-800 bg-slate-200" type="text">
+                <input id="diogonal-two-input" class="w-16  px-4 ml-4 border border-blue-800 bg-slate-200" type="text" placeholder="di-2">
                 <span>cm</span>
               </p>
-              <p class="text-center text-xl font-semibold">Rhombus Area:<span>0</span>cm<sup>2</sup></p>
+              <p class="text-center text-xl font-semibold">Rhombus Area:<span id="Rhombus-show-Area">0</span>cm<sub>2</sub></p>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full text-lg  hover:bg-sky-600">Calculate</button>
+                <button onclick=" calculateRhombusValueById()" class="btn btn-primary w-full text-lg  hover:bg-sky-600">Calculate</button>
               </div>
             </div>
           </div>
