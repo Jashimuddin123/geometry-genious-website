@@ -21,10 +21,14 @@ const setElementValue =  setElement('recteangle-show-area', recteangleResult);
 }
 // paralallogram onclick function
 function calculateParallelogramValueById(){
+    // get eleemnt by id
     const baseInputValue =  getElementValue('parallelogram-base-input');
     const heightInputValue = getElementValue('parallelogram-height-input')
+// calculation base and length
+const parallelogramResult = baseInputValue * heightInputValue;
+// set elemenet result inshow area
+const setElementValue =  setElement('parallelogram-show-area', parallelogramResult);
 
-    
 }
 
 
