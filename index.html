@@ -101,14 +101,14 @@
               <h2 class="card-title text-center  mx-auto">Pentagon</h2>
               <p class="text-center text-xl">Area (A) = 0.5 X p X b</p>
               <p class="text-center">
-                <input class="w-16 border  border-blue-800 bg-slate-200" type="text">
+                <input id="pentagon-peramitter-input" class="w-16 border   border-blue-800 bg-slate-200" type="text" placeholder="p.mitter">
                 <span>cm</span>
-                <input class="w-16  ml-4 border border-blue-800 bg-slate-200" type="text">
+                <input id="pentagon-base-input" class="w-16  ml-4 border px-2 border-blue-800 bg-slate-200" type="text" placeholder="base">
                 <span>cm</span>
               </p>
-              <p class="text-center text-xl font-semibold">Pentagon Area:<span>0</span>cm<sup>2</sup></p>
+              <p class="text-center text-xl font-semibold">Pentagn Area:<span id="Pentagoan-show-Area">0</span>cm<sup>2</sup></p>
               <div class="card-actions ">
-                <button class="btn btn-primary w-full text-lg  hover:bg-purple-600">Calculate</button>
+                <button onclick=" calculatePentagoanValueById()" class="btn btn-primary w-full text-lg  hover:bg-purple-600">Calculate</button>
               </div>
             </div>
           </div>

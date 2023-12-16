@@ -40,7 +40,17 @@ function calculateRhombusValueById(){
     // set elemenet result in show area
     const setElementValue = setElement('Rhombus-show-Area', rombushResult)
 }
-// 5 
+// 5 pentagoan onclick function 
+function calculatePentagoanValueById(){
+    const peramitterInputValue = getElementValue('pentagon-peramitter-input');
+    const baseInputValue = getElementValue('pentagon-base-input');
+
+    // calculate pentagoan 
+    const pentagoanResult = 0.5 * peramitterInputValue * baseInputValue;
+
+    // set elemenet 
+    const setElementValue = setElement('Pentagoan-show-Area', pentagoanResult)
+}
 
 
 
